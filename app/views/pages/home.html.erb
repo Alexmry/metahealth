@@ -11,7 +11,7 @@
       </div>
       <div>
         <% if user_signed_in? %>
-          <%= link_to '<i class="far fa-compass"></i> Continue your session now'.html_safe, schedules_path, class:'yellow-button-homepage' %>
+          <%= link_to '<i class="far fa-compass"></i> Continue your session now'.html_safe, companies_path, class:'yellow-button-homepage' %>
         <% else %>
           <%= link_to '<i class="far fa-compass"></i> Start your session now'.html_safe, new_user_registration_path, class:'yellow-button-homepage' %>
         <% end %>
@@ -59,7 +59,7 @@
     <p>What are you waiting for?</p>
     <div class="mt-3">
       <% if user_signed_in? %>
-        <%= link_to '<i class="far fa-compass"></i> Continue your session now'.html_safe, schedules_path, class:'yellow-button-homepage' %>
+        <%= link_to '<i class="far fa-compass"></i> Continue your session now'.html_safe, companies_path, class:'yellow-button-homepage' %>
       <% else %>
         <%= link_to '<i class="far fa-compass"></i> Start your session now'.html_safe, new_user_registration_path, class:'yellow-button-homepage' %>
       <% end %>
