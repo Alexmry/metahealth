@@ -33,6 +33,7 @@ users.each do |user|
     puts " user id #{user.id} added to the basket"
 end
 
+companies_id = []
 4.times do
     company = Company.new(
         name: Faker::Company.name,
@@ -41,5 +42,14 @@ end
         user_id: users_id.sample
     )
     company.save!
+    companies_id << company.id
     puts "company created #{company.id} id"
+end
+
+for l in 0..3
+    calendar = Calendar.create(
+        company_id: companies_id[l]
+    )
+    puts " calendar created with a company id of #{companies_id[l]}"
+    puts " calendar created with a company id of #{calendar.company.id}"
 end
