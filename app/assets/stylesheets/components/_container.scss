@@ -1,0 +1,31 @@
+.container-coworking-spaces {
+  background-color: #F9C764;
+  display: flex;
+}
+
+.container-general-index-page {
+  margin: 20px auto;
+  width: 830px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.container-general-info-index-cards {
+  width: 900px;
+  display: flex;
+  margin: 10px;
+  padding-bottom: 20px;
+}
+
+.general-info-index-cards-text {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  padding: 20px 40px;
+  flex-grow: 1;
+  p {
+    height: 50px;
+  }
+}

@@ -1,0 +1,71 @@
+<div>
+  <div class="homepage-main-image">
+    <div class="homepage-main-text">
+      <div>
+        <h2 class="yellow-text">WELCOME TO</h2>
+        <h1 class="yellow-text">WORK BUDDY</h1>
+      </div>
+      <div class="middle-text">
+        <h3>Work virtually with people around the world</h3>
+        <p>Find accountability partner, like minded people and co-working space community.</p>
+      </div>
+      <div>
+        <% if user_signed_in? %>
+          <%= link_to '<i class="far fa-compass"></i> Continue your session now'.html_safe, schedules_path, class:'yellow-button-homepage' %>
+        <% else %>
+          <%= link_to '<i class="far fa-compass"></i> Start your session now'.html_safe, new_user_registration_path, class:'yellow-button-homepage' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="general-info-homepage">
+    <h2 class="general-info-homepage-title">We bring you community and a digital working environment to your home!</h2>
+
+    <div class="general-info-homepage-cards">
+      <div class="general-info-homepage-cards-text">
+        <i class="fas fa-users homepage-icons"></i>
+        <p><strong>Community of Doers</strong>: WorkBuddy accountability partners are committed to blasting excuses and getting important work done.</p>
+      </div>
+      <img src="<%= asset_path('https://res.cloudinary.com/laicuroot/image/upload/v1623347596/WP_Homepage_8_p9ufwt.png')%>" alt="" class="general-info-homepage-pics">
+    </div>
+
+    <div class="general-info-homepage-cards">
+      <img src="<%= asset_path('https://res.cloudinary.com/laicuroot/image/upload/v1623347596/WP_Homepage_7_k6ps8p.png')%>" alt="" class="general-info-homepage-pics">
+      <div class="general-info-homepage-cards-text">
+        <i class="fas fa-search-location homepage-icons"></i>
+        <p> <strong>Suited workspaces environment</strong> for your needs. We provide no talking Zoom rooms if you need to focus or networking rooms. </p>
+      </div>
+    </div>
+
+    <div class="general-info-homepage-cards">
+      <div class="general-info-homepage-cards-text">
+        <i class="fas fa-map-marked-alt homepage-icons"></i>
+        <p> <strong>Connect</strong> with buddies in your area and all around the world as well </p>
+      </div>
+      <img src="<%= asset_path('https://res.cloudinary.com/laicuroot/image/upload/v1623347593/WP_Homepage_6_ecwzwj.png')%>" alt="" class="general-info-homepage-pics">
+    </div>
+
+    <div class="general-info-homepage-cards">
+      <img src="<%= asset_path('https://res.cloudinary.com/laicuroot/image/upload/v1623347596/WP_Homepage_4_zlm1zp.png')%>" alt="" class="general-info-homepage-pics">
+      <div class="general-info-homepage-cards-text">
+        <i class="fas fa-landmark homepage-icons"></i>
+        <p> <strong>Get help</strong> to develop your business, your skills, your network</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="homepage-end">
+    <p>What are you waiting for?</p>
+    <div class="mt-3">
+      <% if user_signed_in? %>
+        <%= link_to '<i class="far fa-compass"></i> Continue your session now'.html_safe, schedules_path, class:'yellow-button-homepage' %>
+      <% else %>
+        <%= link_to '<i class="far fa-compass"></i> Start your session now'.html_safe, new_user_registration_path, class:'yellow-button-homepage' %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<!---------------------------FOOTER--------------------->
+<!---------------------FOOTER END----------------------->
+<!---------Will our databse tell us who has followed-so we can send a notification to thier email--->
